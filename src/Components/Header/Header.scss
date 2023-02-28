@@ -1,0 +1,52 @@
+@import "../../App.scss";
+
+header {
+  text-align: center;
+  padding-top: 3rem;
+  span {
+    font-size: 3.2rem;
+  }
+}
+nav {
+  #basic-button {
+    color: #fff;
+  }
+  button {
+    font-size: 3rem;
+  }
+  ul {
+    display: none;
+  }
+}
+#btn__nav__contact {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    text-align: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 117rem;
+    margin: 0 auto;
+  }
+  #btn__nav__contact {
+    display: block;
+    background-color: white;
+    color: $BLUEDARK;
+    font-family: "poppins", sans-serif;
+    font-size: 1.2rem;
+  }
+  .menu__nav {
+    display: none;
+  }
+  nav {
+    ul {
+      display: flex;
+      li {
+        margin: 0 3.5rem;
+      }
+    }
+  }
+}

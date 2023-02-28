@@ -1,0 +1,29 @@
+/* VARIABLES */
+
+
+
+/*COLORS*/
+$PRIMARY_BLUE: #567AE5;
+$BLUEDARK: #151D48;
+$GREY: #797791;
+$PINK: #FF74C4;
+$ORANGE: #FFA842;
+
+/* ***************************/
+
+.top {
+    min-height: 100vh;
+    background-color: $BLUEDARK;
+    color: white;
+    padding: 0 2rem;
+}
+
+.top__content {
+    max-width: 360px;
+    margin: 5rem auto;
+    img {
+        object-fit: cover;
+        max-width: 350px;
+        max-height: 600px;
+    }
+}
