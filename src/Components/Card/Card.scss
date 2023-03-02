@@ -1,44 +1,43 @@
 @import "../../App.scss";
 .card {
-    border: 1px solid#E8E8ED;
-    background-color: #F9FAFB;
-   max-width: 370px;
-   padding: 2rem;
-   margin: 1rem auto;
-   border-radius: 8px;
-    img {
-        max-width: 345px;
-        height: 294px;
-    }
+  border: 1px solid#E8E8ED;
+  background-color: #f9fafb;
+  max-width: 370px;
+  padding: 2rem;
+  margin: 1rem auto;
+  border-radius: 8px;
+  img {
+    max-width: 345px;
+    height: 294px;
+  }
 }
 .card__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .card__description {
-    h3 {
-        font-size: 2rem;
-        text-align: left;
-        margin: 2rem 0;
-    }
-    p {
-        text-align: left;
-    }
+  h3 {
+    font-size: 2rem;
+    text-align: left;
+    margin: 2rem 0;
+  }
+  p {
+    text-align: left;
+  }
 }
 
 .price__book {
-    margin: 2rem 0 0 ;
-    display: flex;
-    justify-content: space-between;
+  margin: 2rem 0 0;
+  display: flex;
+  justify-content: space-between;
 
-    span {
-        color: $PRIMARY_BLUE;
-        font-size: 2rem;
-    }
-    button {
-        background-color: $PRIMARY_BLUE;
-        font-family: "poppins", sans-serif;
-    }
+  span {
+    color: $PRIMARY_BLUE;
+    font-size: 2rem;
+  }
+  button {
+    background-color: $PRIMARY_BLUE;
+    font-family: "poppins", sans-serif;
+  }
 }
