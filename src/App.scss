@@ -24,10 +24,9 @@ $ORANGE: #ffa842;
 /* **************TOP*************/
 
 .top {
-  
   background-color: $BLUEDARK;
   color: white;
-  padding:  2rem;
+  padding: 2rem;
 }
 
 .top__content {
@@ -112,8 +111,6 @@ $ORANGE: #ffa842;
   }
 }
 
-
-
 @media screen and (min-width: 1024px) {
   .top__content {
     max-width: 1215px;
@@ -127,7 +124,7 @@ $ORANGE: #ffa842;
   .waveIcn {
     width: 88px;
     height: 34px;
-     left: 52%;
+    left: 52%;
   }
   .top__text {
     margin-top: 0;
@@ -147,7 +144,8 @@ $ORANGE: #ffa842;
 
 /****************TRUSTED************************/
 
-.trusted, .box {
+.trusted,
+.box {
   padding: 2rem;
   text-align: center;
   h2 {
@@ -177,66 +175,118 @@ $ORANGE: #ffa842;
 $animationSpeed: 40s;
 
 @keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
 }
-
 
 // Styling
 .slider {
-	// background: white;
-	// box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	height: 100px;
-	margin: auto;
-	overflow:hidden;
-	position: relative;
+  // background: white;
+  // box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
   margin-top: 3rem;
-	
-	
-	&::before,
-	&::after {
-		// @include white-gradient;
-		content: "";
-		height: 100px;
-		position: absolute;
-		width: 200px;
-		z-index: 2;
-	}
-	
-	&::after {
-		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
-	}
 
-	&::before {
-		left: 0;
-		top: 0;
-	}
-	
-	.slide-track {
-		animation: scroll $animationSpeed linear infinite;
-		display: flex;
-		width: calc(250px * 14);
+  &::before,
+  &::after {
+    // @include white-gradient;
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+
+  &::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+  }
+
+  .slide-track {
+    animation: scroll $animationSpeed linear infinite;
+    display: flex;
+    width: calc(250px * 14);
     transition: none;
-	}
-	
-	.slide {
-		height: 100px;
-		width: 250px;
-	}
+  }
+
+  .slide {
+    height: 100px;
+    width: 250px;
+  }
 }
 
 /*************POPULAR RESIDENCES**********/
 
 .popular__content {
   margin: 5rem 0;
-  
 }
 
 @media screen and (min-width: 1024px) {
-   .popular__content {
+  .popular__content {
+    max-width: 1170px;
+    display: flex;
+    margin: 6rem auto 0;
+  }
+}
 
-     display: flex;
-   }    
+/***********CONFORT****************/
+.confort__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  button {
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    font-family: "poppins", sans-serif;
+    background-color: $PRIMARY_BLUE
+  }
+}
+.confort__img {
+  img {
+    max-width: 350px;
+  }
+  margin: 3rem 0;
+}
+
+.confort__text {
+  p {
+    margin: 2rem 0;
+  }
+}
+
+.confort-info {
+  margin: 1rem 0;
+ display: flex;
+justify-content: center;
+  span {
+    font-size: 1.6rem;
+    margin: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .confort__content {
+    flex-direction: inherit;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  .confort__img {
+    img {
+      max-width: 465px;
+      max-height:400px
+    }
+  }
 }

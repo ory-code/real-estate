@@ -14,6 +14,8 @@ import varius from "./Assets/Images/varius.png";
 import euTempure from "./Assets/Images/eu-tempus.png";
 import blandit from "./Assets/Images/blandit.png";
 import Card from "./Components/Card/Card";
+import confort from "./Assets/Images/confort.png";
+import disk from "./Assets/Images/disk.svg";
 function App() {
   return (
     <div className="App">
@@ -128,6 +130,30 @@ function App() {
             title="Eu tempus, gravida"
             desc="Rhoncus pellentesque et porttitor mi adipiscing vitae odio enim"
           />
+        </div>
+      </div>
+      <div className="confort box ">
+        <div className="confort__content">
+          <div className="confort__img">
+            <img src={confort} alt="" />
+          </div>
+          <div className="confort__text">
+            <h2>Comfort is our Top Priority for you</h2>
+            <p>
+              Congue enim vitae a ultricies feugiat aliquet netus leo. Nec,
+              volutpat volutpat vulputate adipiscing.
+            </p>
+            <div className="confort-info">
+              <img src={disk} alt="" />
+              <span>Premium National Marketing</span>
+            </div>
+            <div className="confort-info">
+              <img src={disk} alt="" />
+              <span>Free, no Obligation Valuations</span>
+            </div>
+
+            <Button variant="contained">See More</Button>
+          </div>
         </div>
       </div>
     </div>
