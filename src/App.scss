@@ -26,7 +26,7 @@ $ORANGE: #ffa842;
 .top {
   background-color: $BLUEDARK;
   color: white;
-  padding: 2rem;
+  padding: 2.5rem;
 }
 
 .top__content {
@@ -146,7 +146,7 @@ $ORANGE: #ffa842;
 
 .trusted,
 .box {
-  padding: 2rem;
+  padding: 3rem;
   text-align: center;
   h2 {
     // font-size: 2rem;
@@ -231,6 +231,7 @@ $animationSpeed: 40s;
 
 .popular__content {
   margin: 5rem 0;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 1024px) {
@@ -250,7 +251,7 @@ $animationSpeed: 40s;
     margin: 2rem 0;
     font-size: 1.6rem;
     font-family: "poppins", sans-serif;
-    background-color: $PRIMARY_BLUE
+    background-color: $PRIMARY_BLUE;
   }
 }
 .confort__img {
@@ -261,15 +262,30 @@ $animationSpeed: 40s;
 }
 
 .confort__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   p {
     margin: 2rem 0;
+  }
+  ul {
+    li {
+      margin: 2rem 0;
+      img {
+        margin-right: 2.4rem;
+      }
+    }
+  }
+  button {
+    max-width: 320px;
   }
 }
 
 .confort-info {
   margin: 1rem 0;
- display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
   span {
     font-size: 1.6rem;
     margin: 0 2rem;
@@ -277,16 +293,155 @@ justify-content: center;
 }
 
 @media screen and (min-width: 1024px) {
+  .confort {
+    margin: 17rem 0;
+  }
   .confort__content {
     flex-direction: inherit;
     justify-content: space-between;
     max-width: 1170px;
     margin: 0 auto;
   }
+  .confort__text {
+    max-width: 535px;
+    // display: flex;
+    // flex-direction: column;
+    text-align: left;
+    align-items: initial;
+    h2 {
+      max-width: 347px;
+    }
+    p {
+      max-width: 505px;
+    }
+    ul {
+      li {
+        margin: 2rem 0;
+        img {
+          margin-right: 2.4rem;
+        }
+      }
+    }
+    button {
+      max-width: 144px;
+      margin-top: 1rem;
+    }
+  }
   .confort__img {
     img {
       max-width: 465px;
-      max-height:400px
+      max-height: 400px;
     }
   }
+}
+
+/***********CUSTOMER*********/
+.opinion {
+  margin: 10rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.opinion__content {
+  p {
+    margin-top: 3rem;
+  }
+}
+.opinion__box {
+  background-color: #e8e8ed;
+  padding: 1rem;
+  position: relative;
+  margin: 3rem 2rem;
+  max-width: 370px;
+  .opinion-logo {
+    position: absolute;
+    top: -35px;
+    left: 30px;
+  }
+}
+
+.opinion__profile {
+  display: flex;
+  align-items: center;
+  img {
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+  }
+}
+.opinion__profile-text {
+  margin: 2rem 0;
+  h3 {
+    font-size: 2rem;
+  }
+  span {
+    font-size: 1.6rem;
+    color: $GREY;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .opinion {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/*******CUSTOMER BLUE**********/
+.customer__blue {
+  background-color: $PRIMARY_BLUE;
+  max-width: 1170px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+@media screen and (min-width: 768px) and (max-width: 1230px) {
+  .customer__blue {
+max-width: 950px;
+  }
+
+}
+.customer__blue__content {
+  padding: 1rem 1.2rem;
+  h2 {
+    color: white;
+  }
+  p {
+    color: #f9fafb;
+  }
+  button {
+    background-color: $BLUEDARK;
+    margin: 3rem 0;
+    font-size: 1.5rem;
+    font-family: "poppins", sans-serif;
+  }
+}
+
+/*******FOOTER******/
+footer {
+  background-color: $BLUEDARK;
+  margin-top: 5rem;
+}
+.footer__content {
+  color: white;
+ h2 {
+   color: white;
+font-size: 3.2rem;
+margin: 1.8rem 0;
+ } 
+ span {
+font-size: 1.9rem;
+ }
+ ul {
+  margin: 2.5rem 0;
+  li {
+    margin: 1rem 0;
+  }
+ }
+}
+
+.footer__icon {
+ svg {
+  margin: 0 2rem;
+ }
 }

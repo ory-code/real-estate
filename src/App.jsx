@@ -10,12 +10,22 @@ import amazonLogo from "./Assets/Images/amazonLogo.svg";
 import paypalLogo from "./Assets/Images/paypalLogo.svg";
 import iftttLogo from "./Assets/Images/iftttLogo.svg";
 import googleLogo from "./Assets/Images/googleLogo.svg";
+import pinkLogo from "./Assets/Images/pink-logo.png";
+import blueLogo from "./Assets/Images/blue-logo.png";
+import orangeLogo from "./Assets/Images/orange-logo.png";
 import varius from "./Assets/Images/varius.png";
 import euTempure from "./Assets/Images/eu-tempus.png";
 import blandit from "./Assets/Images/blandit.png";
 import Card from "./Components/Card/Card";
 import confort from "./Assets/Images/confort.png";
 import disk from "./Assets/Images/disk.svg";
+import adaberto from "./Assets/Images/adalberto.png";
+import gino from "./Assets/Images/gino.png";
+import pedro from "./Assets/Images/pedro.png";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
 function App() {
   return (
     <div className="App">
@@ -143,19 +153,112 @@ function App() {
               Congue enim vitae a ultricies feugiat aliquet netus leo. Nec,
               volutpat volutpat vulputate adipiscing.
             </p>
-            <div className="confort-info">
-              <img src={disk} alt="" />
-              <span>Premium National Marketing</span>
-            </div>
-            <div className="confort-info">
-              <img src={disk} alt="" />
-              <span>Free, no Obligation Valuations</span>
-            </div>
+            <ul>
+              <li>
+                <img src={disk} alt="" />
+                <span>Premium National Marketing</span>
+              </li>
+              <li>
+                <img src={disk} alt="" />
+                <span>Free, no Obligation Valuations</span>
+              </li>
+            </ul>
 
             <Button variant="contained">See More</Button>
           </div>
         </div>
       </div>
+      <div className="customer box ">
+        <div className="customer__content">
+          <h2>What Our Customer Say About Us</h2>
+          <p>
+            Arcu, accumsan quam mi porttitor etiam in. Libero egestas amet, quam
+            sagittis.
+          </p>
+
+          <div className="opinion">
+            <div className="opinion__box">
+              <img src={pinkLogo} alt="" className="opinion-logo" />
+              <div className="opinion__content">
+                <p>
+                  There are many variations of passages of Lorem Ipsum form, by
+                  injected humour randomised words.
+                </p>
+                <div className="opinion__profile">
+                  {/* <Avatar alt="customer profile" src={adaberto} sx={{ width: 76, height: 76 }} /> */}
+                  <img src={adaberto} alt="" />
+                  <div className="opinion__profile-text">
+                    <h3>Adalberto Kovach</h3>
+                    <span>Marketing Management</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="opinion__box">
+              <img src={blueLogo} alt="" className="opinion-logo" />
+              <div className="opinion__content">
+                <p>
+                  There are many variations of passages of Lorem Ipsum form, by
+                  injected humour randomised words.
+                </p>
+                <div className="opinion__profile">
+                  {/* <Avatar alt="customer profile" src={adaberto} sx={{ width: 76, height: 76 }} /> */}
+                  <img src={gino} alt="" />
+                  <div className="opinion__profile-text">
+                    <h3>Gino Lavender</h3>
+                    <span>Marketing Management</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="opinion__box">
+              <img src={orangeLogo} alt="" className="opinion-logo" />
+              <div className="opinion__content">
+                <p>
+                  There are many variations of passages of Lorem Ipsum form, by
+                  injected humour randomised words.
+                </p>
+                <div className="opinion__profile">
+                  {/* <Avatar alt="customer profile" src={adaberto} sx={{ width: 76, height: 76 }} /> */}
+                  <img src={pedro} alt="" />
+                  <div className="opinion__profile-text">
+                    <h3>Pedro Pounds</h3>
+                    <span>Marketing Management</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="customer__blue box">
+        <div className="customer__blue__content">
+          <h2>What Our Customer Say About Us</h2>
+          <p>
+            Gravida et dignissim sit augue suscipit leo nisl, tristique.
+            Scelerisque consequat vel penatibus vivamus nec.
+          </p>
+          <Button variant="contained">Get Started</Button>
+        </div>
+      </div>
+      <footer>
+        <div className="footer__content box">
+          <h2>Homex.</h2>
+          <span> We’ll help you achieve your marketing & business goals </span>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+          <div className="footer__icon">
+           <InstagramIcon fontSize="large" />
+           <LinkedInIcon fontSize="large" />
+           <FacebookIcon fontSize="large" />
+           <TwitterIcon fontSize="large" />
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
