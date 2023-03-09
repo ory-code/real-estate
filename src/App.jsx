@@ -22,10 +22,11 @@ import disk from "./Assets/Images/disk.svg";
 import adaberto from "./Assets/Images/adalberto.png";
 import gino from "./Assets/Images/gino.png";
 import pedro from "./Assets/Images/pedro.png";
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import { Link } from "@mui/material";
 function App() {
   return (
     <div className="App">
@@ -252,10 +253,21 @@ function App() {
             <li>Contact</li>
           </ul>
           <div className="footer__icon">
-           <InstagramIcon fontSize="large" />
-           <LinkedInIcon fontSize="large" />
-           <FacebookIcon fontSize="large" />
-           <TwitterIcon fontSize="large" />
+            <Link target="blanck" href="http://www.instagram.com">
+              <InstagramIcon fontSize="large" />
+            </Link>
+            <Link
+              target="blanck"
+              href="https://www.linkedin.com/in/sacha-ory-developer/"
+            >
+              <LinkedInIcon fontSize="large" />
+            </Link>
+            <Link target="blanck" href="https://github.com/ory-code">
+              <GitHubIcon fontSize="large" />
+            </Link>
+            <Link target="blanck" href="http://twitter.com">
+              <TwitterIcon fontSize="large" />
+            </Link>
           </div>
         </div>
       </footer>
